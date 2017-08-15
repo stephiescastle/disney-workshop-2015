@@ -1,0 +1,22 @@
+#N canvas 177 456 925 540 10;
+#X msg 97 95 close;
+#X msg 107 120 info;
+#X msg 107 146 devices;
+#X msg 80 75 open 3;
+#X msg 144 119 firmware;
+#X text 320 164 Set input/output mode of the pins for digital IO:;
+#X msg 368 251 digital 13 \$1;
+#X obj 368 233 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X msg 367 199 pinMode 13 output;
+#X text 480 199 <-- set pin 13 to output mode;
+#X text 391 232 <-- toggle pin 13 on and off;
+#X obj 80 182 arduino;
+#X connect 0 0 11 0;
+#X connect 1 0 11 0;
+#X connect 2 0 11 0;
+#X connect 3 0 11 0;
+#X connect 4 0 11 0;
+#X connect 6 0 11 0;
+#X connect 7 0 6 0;
+#X connect 8 0 11 0;
